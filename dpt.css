@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fffaf7;
+    color: #26343b;
+}
+
+
+.department-header {
+    min-height: 480px;
+    background: linear-gradient(  rgba(23, 35, 43, 0.88),  rgba(23, 35, 43, 0.88) );
+    position: relative;
+}
+
+
+.department-header nav {
+    width: 90%;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.logo {
+    text-decoration: none;
+    color: #ffe5d8;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff4ed;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #df7778;
+}
+
+
+.department {
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 75px 20px;
+}
+
+.department i {
+    color: #d87979;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.department h1 {
+    color: #ffe5d8;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.department p {
+    color: #e5d9d3;
+    max-width: 750px;
+    margin: auto;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+.department-content {
+    width: 85%;
+    max-width: 1100px;
+    margin: 70px auto;
+}
+
+
+.content-box {
+    background: #ffffff;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    border: 1px solid #ead6cf;
+    box-shadow:
+        0 8px 25px rgba(50, 40, 40, 0.06);
+}
+
+.content-box h2 {
+    color: #a94b57;
+    font-size: 26px;
+    margin-bottom: 18px;
+}
+
+.content-box p {
+    color: #5d6669;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.program-card {
+    background: #f7e6e0;
+    padding: 28px 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #e8cbc3;
+    transition: 0.3s;
+}
+
+.program-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(80,45,45,0.12);
+}
+
+.program-card i {
+    color: #b84f5b;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.program-card h3 {
+    color: #26343b;
+    margin-bottom: 8px;
+    font-size: 19px;
+}
+
+.program-card p {
+    font-size: 14px;
+}
+
+.areas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.areas span {
+    background: #e8f0e8;
+    color: #527a68;
+    padding: 11px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #d3e0d6;
+}
+
+
+.department-footer {
+    background: #121c22;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 80px;
+}
+
+.department-footer p {
+    color: #bfc7c9;
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+
+    .department-header {
+        min-height: 450px;
+    }
+
+    .department-header nav {
+        width: 85%;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .department {
+        padding: 65px 20px;
+    }
+
+    .department i {
+        font-size: 40px;
+    }
+
+    .department h1 {
+        font-size: 30px;
+    }
+
+    .department p {
+        font-size: 14px;
+    }
+
+    .department-content {
+        width: 90%;
+        margin: 45px auto;
+    }
+
+    .content-box {
+        padding: 25px 20px;
+    }
+
+    .content-box h2 {
+        font-size: 23px;
+    }
+
+    .program-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .areas {
+        gap: 8px;
+    }
+
+    .areas span {
+        font-size: 13px;
+    }
+}
